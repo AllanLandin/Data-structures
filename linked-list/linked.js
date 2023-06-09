@@ -36,7 +36,7 @@ class LinkedList{
         if (this._len == 0){ return false }
         let current = this._head
         for (let i = 0; i < this._len; i++){
-            console.log(current)
+            console.log(current.element)
             current = current.next
         }
         return true
@@ -121,3 +121,7 @@ class LinkedList{
         return -1;
     }
 }
+
+let ll = new LinkedList()
+ll.append(11)
+ll.showData()
